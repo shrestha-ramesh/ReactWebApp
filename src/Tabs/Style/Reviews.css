@@ -1,0 +1,13 @@
+input{
+    width:200px;
+    padding:10px 0px 10px 10px;
+    color:black;
+    border-radius:5px;
+}
+input:hover{
+    border:solid black;
+}
+#review-div{
+    font-size: small;
+    display:flex;
+}
