@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HttpsRedirect from 'react-https-redirect';
 import Header from './Header';
 import Contact from './Tabs/Contact';
@@ -12,17 +12,17 @@ import Location from './Tabs/Location';
 function App() {
   return (
     <HttpsRedirect>
-      <Header/>
+      <Header />
       <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/hotel" component={Home}/>
-          <Route path="/location" component={Location}/>
-          <Route path="/aboutus" component={About}/>
-          <Route path="/photos" component={Photos}/>
-          <Route path="/contactus" component={Contact}/>
-          <Route path="/reviews" component={Reviews}/>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/hotel" element={<Home />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/aboutus" element={<About />} />
+          <Route path="/photos" element={<Photos />} />
+          <Route path="/contactus" element={<Contact />} />
+          <Route path="/reviews" element={<Reviews />} />
+        </Routes>
       </BrowserRouter>
     </HttpsRedirect>
   );
