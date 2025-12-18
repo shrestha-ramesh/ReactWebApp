@@ -16,8 +16,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "test:e2e": "npx playwright test"
+    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,22 +32,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "vite.config.js",
-  "devDependencies": {
-    "@playwright/test": "^1.57.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shrestha-ramesh/ReactWebApp.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/shrestha-ramesh/ReactWebApp/issues"
-  },
-  "homepage": "https://github.com/shrestha-ramesh/ReactWebApp#readme"
+  }
 }
